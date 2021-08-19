@@ -1,0 +1,7 @@
+@import '~bulma/css/bulma.css';
+
+.hero {
+    max-width: 1280px!important;
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -1,18 +1,23 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <!-- Hero content: will be in the middle -->
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title">Kodoti App</h1>
+          <h2 class="subtitle">Bienvenido  <span class='has-text-weight-bold'>{{this.$store.getters.user.name}}</span> a tu App de gestion de ventas</h2>
+
+          <p>Desde esta app podras gestionar las ventas en tu negocio</p>
+        </div>
+      </div>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
-  name: 'Home',
+  name: "Home",
   components: {
-    HelloWorld
-  }
-}
+  },
+};
 </script>
